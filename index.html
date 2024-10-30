@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wyng Experience Page</title>
+    <style>
+        /* Basic styling for the page */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        footer {
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            text-align: center;
+        }
+
+        .wyng-experience {
+            margin-top: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            background-color: #eee;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Wyng Experience</h1>
+    </header>
+    <main>
+        <section>
+            <p>This is a sample page designed to simulate a long scroll. Enjoy exploring the content as you scroll down!</p>
+            <!-- Generate more content to ensure scrolling -->
+            <div id="content"></div>
+        </section>
+    </main>
+    <footer>
+        <!-- Target div placed at the bottom -->
+        <div class="wyng-experience" data-wyng-id="6720e91f20104c02214a1206" data-wyng-token="QhpOYlBUx0slEeXTiiIGOd0X6c6KPSCVzVk855NN6720e920e5ad7d11593d3586"></div>
+    </footer>
+
+    <!-- Wyng script -->
+    <script async src="https://d1l2r231yt9ev1.cloudfront.net/js/campaign.js"></script>
+
+    <!-- Inline JavaScript to generate content for scrolling -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const contentDiv = document.getElementById('content');
+            for (let i = 0; i < 50; i++) {
+                const paragraph = document.createElement('p');
+                paragraph.textContent = "This is additional content to increase page length for scrolling.";
+                contentDiv.appendChild(paragraph);
+            }
+        });
+    </script>
+</body>
+</html>
